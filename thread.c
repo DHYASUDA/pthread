@@ -2,7 +2,7 @@
 #include <pthread.h>
 
 void* print_hello(void* data) {
-    int thread_number = (int)(long)data; // Convert `void*` back to `int`
+    int thread_number = (int)(long)data; 
     printf("Hello from thread %d\n", thread_number);
     return NULL;
 }
