@@ -15,7 +15,6 @@ int main() {
         }
     }
 
-    // Wait for all threads to finish
     for (int k = 0; k < 5; k++) {
         pthread_join(thread_id[k], NULL);
     }
